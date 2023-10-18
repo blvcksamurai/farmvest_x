@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import 'custom_divider.dart';
+
 class RecentTransactions extends StatelessWidget {
   const RecentTransactions({
     super.key,
@@ -12,19 +14,7 @@ class RecentTransactions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-          margin: EdgeInsets.symmetric(vertical: 10),
-          width: 377,
-          decoration: ShapeDecoration(
-            shape: RoundedRectangleBorder(
-              side: BorderSide(
-                width: 1,
-                strokeAlign: BorderSide.strokeAlignCenter,
-                color: Color(0xFFDADADA),
-              ),
-            ),
-          ),
-        ),
+        CustomDivider(),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: Row(

@@ -3,18 +3,17 @@
 import 'package:flutter/material.dart';
 
 import '../../screens/home_screen.dart';
-import '../../utils/app_styles.dart';
 import '../long_container.dart';
 import '../portfolio_card.dart';
 
-class TabHome1 extends StatefulWidget {
-  const TabHome1({super.key});
+class Portfollio extends StatefulWidget {
+  const Portfollio({super.key});
 
   @override
-  State<TabHome1> createState() => _TabHome1State();
+  State<Portfollio> createState() => _PortfollioState();
 }
 
-class _TabHome1State extends State<TabHome1> {
+class _PortfollioState extends State<Portfollio> {
   @override
   Widget build(BuildContext context) {
     return ListView(

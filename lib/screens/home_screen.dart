@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
-import 'package:farmvest_x/widgets/tabbarPage/tab1_home.dart';
+import 'package:farmvest_x/widgets/tabbarPage/Portfollio_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../utils/app_styles.dart';
-import '../widgets/tabbarPage/tab2_home.dart';
+import '../widgets/tabbarPage/Wallet_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -102,43 +102,44 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
                 //Tab Controllers
                 Center(
-                  child: Container(
-                    // height: 35,
-                    width: MediaQuery.of(context).size.width * 0.80,
-                    decoration: BoxDecoration(
-                      color: Styles.formColor,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Column(
-                      children: [
-                        Padding(
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        child: Padding(
                           padding: EdgeInsets.all(5),
-                          child: TabBar(
-                              controller: tabController,
-                              indicatorWeight: 2,
-                              indicatorSize: TabBarIndicatorSize.tab,
-                              labelColor: Colors.white,
-                              indicator: BoxDecoration(
-                                  color: Styles.secondary,
-                                  borderRadius: BorderRadius.circular(5)),
-                              unselectedLabelColor: Colors.black,
-                              tabs: [
-                                Tab(
-                                  text: 'Portfollio',
-                                ),
-                                Tab(
-                                  text: 'Wallet',
-                                )
-                              ]),
+                          child: Container(
+                            height: 36,
+                            decoration: BoxDecoration(
+                                color: Styles.formColor,
+                                borderRadius: BorderRadius.circular(12)),
+                            child: TabBar(
+                                controller: tabController,
+                                indicatorWeight: 2,
+                                indicatorSize: TabBarIndicatorSize.tab,
+                                labelColor: Colors.white,
+                                indicator: BoxDecoration(
+                                    color: Styles.secondary,
+                                    borderRadius: BorderRadius.circular(12)),
+                                unselectedLabelColor: Colors.black,
+                                tabs: [
+                                  Tab(
+                                    text: 'Portfollio',
+                                  ),
+                                  Tab(
+                                    text: 'Wallet',
+                                  )
+                                ]),
+                          ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
                 Expanded(
                     child: TabBarView(controller: tabController, children: [
-                  TabHome1(),
-                  TabHome2(),
+                  Portfollio(),
+                  Wallet(),
                 ]))
 
                 //Place here
