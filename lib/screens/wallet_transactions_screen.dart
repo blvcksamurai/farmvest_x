@@ -2,11 +2,8 @@
 
 import 'package:farmvest_x/widgets/tabBarWalletTransactions/withdrawals.dart';
 import 'package:flutter/material.dart';
-
 import '../utils/app_styles.dart';
 import '../widgets/tabBarWalletTransactions/funding.dart';
-import '../widgets/tabbarPage/Portfollio_tab.dart';
-import '../widgets/tabbarPage/Wallet_tab.dart';
 
 class WalletTransactions extends StatefulWidget {
   const WalletTransactions({super.key});

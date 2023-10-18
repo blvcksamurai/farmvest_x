@@ -1,4 +1,3 @@
-import 'package:farmvest_x/widgets/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../custom_divider.dart';

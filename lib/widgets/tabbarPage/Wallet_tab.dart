@@ -38,7 +38,7 @@ class _WalletState extends State<Wallet> {
                 ),
               ),
               Positioned(
-                left: 35,
+                left: 30,
                 top: 15,
                 child: Text(
                   'Wallet Balance',
@@ -50,7 +50,7 @@ class _WalletState extends State<Wallet> {
                 ),
               ),
               Positioned(
-                left: 35,
+                left: 30,
                 top: 44,
                 child: Text(
                   'N20,000.00',
@@ -63,12 +63,12 @@ class _WalletState extends State<Wallet> {
                 ),
               ),
               Positioned(
-                left: 320,
+                left: 310,
                 top: 10,
                 child: SvgPicture.asset('assets/images/wallet.svg'),
               ),
               Positioned(
-                left: 260,
+                left: 250,
                 top: 69,
                 child: InkWell(
                   onTap: () {
