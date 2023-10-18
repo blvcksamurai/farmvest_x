@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 import '../../screens/home_screen.dart';
@@ -31,27 +33,35 @@ class _TabHome1State extends State<TabHome1> {
           height: 10,
         ),
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Text(
-            'CREATE A GREEN FUTURE',
-            style: TextStyle(color: Styles.secondary, fontSize: 15),
-            textAlign: TextAlign.left,
-          ),
-        ),
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Text(
+              'CREATE A GREEN FUTURE',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Color(0xFF2E5A1C),
+                fontSize: 12,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w400,
+                height: 0,
+                letterSpacing: -0.33,
+              ),
+            )),
         SizedBox(height: 10),
         LongContainer(),
         SizedBox(height: 10),
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Text(
-            'Quick Actions',
-            style: TextStyle(
-                color: Styles.secondary,
-                fontSize: 11,
-                fontWeight: FontWeight.bold),
-            textAlign: TextAlign.left,
-          ),
-        ),
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: Text(
+              'Quick Actions',
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Color(0xFF2E5A1C),
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
+                height: 0,
+                letterSpacing: -0.33,
+              ),
+            )),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 5),
           child: Row(
