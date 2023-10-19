@@ -115,22 +115,25 @@ class _AccountNumberScreenState extends State<AccountNumberScreen> {
                     height: 0,
                   ),
                 ),
-                Container(
-                  height: 18,
-                  width: 41,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(6),
-                    color: Styles.quickColor,
-                  ),
-                  child: Text(
-                    'Copy',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Color(0xFF436B33),
-                      fontSize: 10,
-                      fontFamily: 'Poppins',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    height: 18,
+                    width: 41,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      color: Styles.quickColor,
+                    ),
+                    child: Text(
+                      'Copy',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color(0xFF436B33),
+                        fontSize: 10,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.w400,
+                        height: 0,
+                      ),
                     ),
                   ),
                 )
