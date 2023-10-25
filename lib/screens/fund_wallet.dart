@@ -3,8 +3,6 @@
 import 'package:farmvest_x/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 import '../utils/app_styles.dart';
 import '../widgets/card_details_modal.dart';
 
