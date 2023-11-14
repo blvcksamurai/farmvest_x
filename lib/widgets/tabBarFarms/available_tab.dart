@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:farmvest_x/widgets/tab_available/available_transactions.dart';
 import 'package:flutter/material.dart';
 
 import '../custom_search_bar.dart';
@@ -13,7 +14,15 @@ class AvailableTab extends StatelessWidget {
     return ListView(
       children: [
         CustomSearchBar(),
-        FarmInventoryCard(),
+        GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const AvailableTransaction()),
+              );
+            },
+            child: FarmInventoryCard()),
         FarmInventoryCard(),
         FarmInventoryCard(),
         SizedBox(height: 40)
