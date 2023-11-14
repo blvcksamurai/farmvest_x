@@ -11,11 +11,11 @@ class CustomDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10),
-      width: 377,
+      width: double.infinity,
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
           side: BorderSide(
-            width: 1,
+            width: 0.5,
             strokeAlign: BorderSide.strokeAlignCenter,
             color: Color(0xFFDADADA),
           ),
