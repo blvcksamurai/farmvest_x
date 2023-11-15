@@ -36,15 +36,6 @@ class _SupportScreenState extends State<SupportScreen> {
               letterSpacing: -0.33,
             ),
           ),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(
-              Icons.arrow_back,
-              color: Styles.primaryColor,
-            ),
-          ),
         ),
         body: ListView(
           children: [
