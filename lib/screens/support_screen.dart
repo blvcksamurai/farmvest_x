@@ -98,7 +98,7 @@ class _SupportScreenState extends State<SupportScreen> {
             CustomDivider(),
             ContactUsItems(
               image: 'assets/images/location.png',
-              text: '2A Banjo wole Street, Lekki,\nphase 2,  Lagos',
+              text: '2A Banjo wole Street, Lekki,\nphase 2, Lagos',
             ),
             CustomDivider(),
             SizedBox(height: 10),
