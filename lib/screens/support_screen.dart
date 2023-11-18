@@ -136,7 +136,7 @@ class _SupportScreenState extends State<SupportScreen> {
               ),
             ),
             CustomDivider(),
-            SizedBox(height: 40)
+            SizedBox(height: 50)
           ],
         ));
   }
