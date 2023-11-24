@@ -5,7 +5,7 @@ Color primary = const Color(0xff4E9525);
 class Styles {
   static Color primaryColor = primary;
   static Color secondary = const Color(0xff2e5a1c);
-  static Color bgColor = const Color(0xffeeedf2);
+  static Color bgColor = const Color(0xffffffff);
   static Color formColor = const Color(0xffEDF0C7);
   static Color subText = const Color(0xff4E9525);
   static Color buttonTextColor = const Color(0xffF3FF93);
